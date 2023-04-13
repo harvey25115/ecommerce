@@ -17,18 +17,20 @@ export default function CurrencySelect() {
   const { value, rates } = useSelector((state: RootState) => state.currency);
   const dispatch = useDispatch();
 
-  // const { data } = useCurrency();
-  const data = {
-    success: true,
-    timestamp: 1681345863,
-    base: "USD",
-    date: "2023-04-13",
-    rates: {
-      EUR: 0.909202,
-      GBP: 0.80049,
-      JPY: 132.995045,
-    },
-  };
+  const { data } = useCurrency();
+  // data from 2023/4/13
+  // use this dummy data if the API key used has already reached its limits
+  // const data = {
+  //   success: true,
+  //   timestamp: 1681345863,
+  //   base: "USD",
+  //   date: "2023-04-13",
+  //   rates: {
+  //     EUR: 0.909202,
+  //     GBP: 0.80049,
+  //     JPY: 132.995045,
+  //   },
+  // };
 
   useEffect(() => {
     if (!rates && data?.rates) {

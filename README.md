@@ -1,3 +1,26 @@
+## Overview
+
+This is a simple e-commerce app using NextJS.
+I used Redux toolkit to make the currency settings persistent.
+I did not used any UI library to showcase my skills in raw CSS but I used SASS to have a clean CSS code.
+I decided to use SWR to get the currency data from API and save it to store.
+
+# API used
+
+- https://fakestoreapi.com
+- https://api.apilayer.com/exchangerates_data
+
+Since the currency API has limits on API call due to free account. I decided to turn off the auto-revalidation in SWR to minimize the API calls. I also added dummy data that is currently commented and
+can be used if ever the limit usage to the currency API has reached its limit.
+
+# Tech Stack
+
+- NextJS
+- Redux Toolkit
+- Typescript
+- SWR (for getting data in client-side with caching)
+- SCSS
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

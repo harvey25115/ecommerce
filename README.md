@@ -3,7 +3,7 @@
 This is a simple e-commerce app using NextJS.
 I used Redux toolkit to make the currency settings persistent.
 I did not used any UI library to showcase my skills in raw CSS but I used SASS to have a clean CSS code.
-I decided to use SWR to get the currency data from API and save it to store.
+I decided to use SWR to get the currency data from API and save it to store. I also added custom 404 page when there is no data found.
 
 # API used
 

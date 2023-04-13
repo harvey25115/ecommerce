@@ -1,0 +1,95 @@
+@import "./variables.scss";
+
+.sideBar {
+  white-space: nowrap;
+  padding: 2rem 3rem;
+  margin: 2rem 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: $secondary-color;
+
+  > header {
+    color: $secondary-color;
+    background-color: $primary-color;
+    border-radius: 2rem;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+  }
+
+  > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    & a {
+      padding-bottom: 0.3rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-bottom: 1px solid $secondary-color;
+    }
+
+    & a:hover {
+      border-bottom: 1px solid #eb5353;
+      transition: border-bottom 0.75s;
+    }
+  }
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+
+  > section {
+    padding: 2rem;
+    min-height: 100%;
+
+    > header {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+// media queries
+// tablet
+@media only screen and (max-width: 950px) {
+  .main {
+    flex-direction: column;
+    padding: 1rem;
+
+    > section header {
+      text-align: center;
+    }
+  }
+
+  .sideBar {
+    margin: 0;
+    width: 100%;
+    align-items: center;
+
+    > ul {
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    > header {
+      padding: 0.25rem 2rem;
+    }
+  }
+
+  .productContainer {
+    justify-content: center;
+  }
+}

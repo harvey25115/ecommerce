@@ -1,0 +1,87 @@
+@import "@/styles/variables.scss";
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background-color: $primary-color;
+  color: $secondary-color;
+  align-items: center;
+  gap: 1rem;
+
+  > div:first-child {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+}
+
+.searchBox {
+  min-width: 50%;
+  display: flex;
+  align-items: center;
+
+  > label {
+    margin-right: 1rem;
+  }
+
+  > input {
+    padding: 0.75rem;
+    border-radius: 2rem;
+    border: 0;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.accountBox {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  > a,
+  div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid transparent;
+  }
+
+  > a:hover {
+    border-bottom: 1px solid white;
+    transition: border-bottom 0.75s;
+  }
+}
+
+// media queries
+// tablet
+@media only screen and (max-width: 950px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .searchBox {
+    flex-direction: column;
+    gap: 0.5rem;
+
+    > label {
+      display: none;
+    }
+  }
+}
+
+// mobile
+@media only screen and (max-width: 400px) {
+  .searchBox {
+    width: 90%;
+  }
+
+  .accountBox {
+    & span {
+      display: none;
+    }
+  }
+}

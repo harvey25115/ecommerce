@@ -14,16 +14,16 @@
     "@types/react": "18.0.34",
     "@types/react-dom": "18.0.11",
     "eslint": "8.38.0",
-    "eslint-config-next": "13.3.0",
-    "next": "13.3.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "^14.2.33",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-redux": "^8.0.5",
     "sharp": "^0.32.0",
     "swr": "^2.1.1",
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "eslint-config-next": "^14.2.33",
     "sass": "^1.61.0"
   }
 }
